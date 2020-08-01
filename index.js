@@ -6,7 +6,7 @@ bot.points = new Enmap({name: "points"});
 
 bot.on('ready' , () =>{
     console.log('This bot is online!');
-
+    bot.user.setActivity('f!help', {type: "PLAYING"}).catch(console.error);
 });
 
 
@@ -22,10 +22,10 @@ bot.on('message', msg =>{
             const embed = new Discord.MessageEmbed()
             .setTitle('Command List')
             .addFields(
-                {name:'Basic Commands', value:"$help\nShows the list of commands\n\n", inline:true}
+                {name:'Basic Commands', value:"f!help\nShows the list of commands\n\n", inline:true}
             )
             .addFields(
-                {name:'Strike Commands', value:"$strikes\nShows how many strikes you have and why\n\n", inline:true}
+                {name:'Strike Commands', value:"f!strikes\nShows how many strikes you have and why\n\n", inline:true}
             )
                 .setColor('#03398f')
             msg.channel.send(embed);
