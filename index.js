@@ -4,6 +4,7 @@ const bot = new Discord.Client();
 const Enmap = require("enmap");
 bot.points = new Enmap({name: "points"});
 
+
 bot.on('ready' , () =>{
     console.log('This bot is online!');
     bot.user.setActivity('f!help', {type: "PLAYING"}).catch(console.error);
