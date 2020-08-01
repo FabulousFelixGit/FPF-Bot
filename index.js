@@ -9,7 +9,6 @@ bot.on('ready' , () =>{
     bot.user.setActivity('f!help', {type: "PLAYING"}).catch(console.error);
 });
 
-
 bot.on('message', msg =>{
 
     const sender = msg.author;
@@ -52,6 +51,8 @@ bot.on('message', msg =>{
             const embed1 = new Discord.MessageEmbed()
             .setTitle(msg.author.username + '\'s strikes')
             .addField('Strike 1', "Reason for strike")
+            .addField('Strike 2', "Reason for strike")
+            .addField('Strike 3', "Reason for strike")
             .setColor('#c40d00')
             msg.channel.send(embed1);
             break;
