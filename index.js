@@ -85,6 +85,4 @@ bot.on('message', msg =>{
     }
 })
 
-const usedButton = new Set();
-
 bot.login(process.env.BOT_TOKEN);
