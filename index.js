@@ -39,20 +39,20 @@ bot.on('message', msg =>{
             msg.author.send("Yo");
             break;
         case "$embed":
-            const embed = new Discord.MessageEmbed()
+            const embed0 = new Discord.MessageEmbed()
             .setTitle(msg.author.username + '\'s info')
             .addField('Name', msg.author.username)
             .setColor('#48C9B0')
-            msg.channel.send(embed);
+            msg.channel.send(embed0);
             break;
         
         //strike commands
         case "$strikes":
-            const embed = new Discord.MessageEmbed()
+            const embed1 = new Discord.MessageEmbed()
             .setTitle(msg.author.username + '\'s strikes')
             .addField('Strike 1', "Reason for strike")
             .setColor('#c40d00')
-            msg.channel.send(embed);
+            msg.channel.send(embed1);
             break;
         }
 })
