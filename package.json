@@ -9,7 +9,17 @@
   "author": "FabulousFelix",
   "license": "ISC",
   "dependencies": {
+    "better-sqlite3": "^7.1.0",
     "discord.js": "^12.2.0",
     "enmap": "^5.4.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabulousFelixGit/FPF-Bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FabulousFelixGit/FPF-Bot/issues"
+  },
+  "homepage": "https://github.com/FabulousFelixGit/FPF-Bot#readme"
 }
